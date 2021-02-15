@@ -5,7 +5,7 @@ var service = require('../services/service').getInstance();
 /* GET continenti del mondo. */
 router.get('/api/get/continenti', function(req, res, next) {
     let continenti = service.getContinenti();
-    res.send(continenti);
+    res.json(continenti);
 });
 
 module.exports = router;
