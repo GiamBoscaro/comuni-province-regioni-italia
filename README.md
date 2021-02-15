@@ -13,3 +13,11 @@ Un semplice server in Node.JS che esponde delle API in grado di fornire l'elenco
 ### Avviare il Server
 
     npm run start
+
+### Citazioni/Riferimenti
+
+Ringrazio gli utenti che hanno messo a disponsizione i dati di comuni, province e regioni italiane:
+
+@matteocondrini https://github.com/matteocontrini
+@stockmind https://gist.github.com/stockmind
+@napolux https://github.com/napolux
