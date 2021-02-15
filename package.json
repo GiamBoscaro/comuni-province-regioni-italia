@@ -1,0 +1,17 @@
+{
+  "name": "api-comuni-italiani",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "start": "node ./bin/www",
+    "debug": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "countries-list": "^2.6.1",
+    "debug": "~2.6.9",
+    "express": "~4.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
