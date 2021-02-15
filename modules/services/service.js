@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const world = require('countries-list');
+const { runInThisContext } = require('vm');
 
 class PrivateService {
     constructor() {       
@@ -18,6 +19,8 @@ class PrivateService {
         this.continenti = world.continents;
         this.lingue = world.languages;
     }
+    
+    // ### GET ALL ###
 
     getComuni() {
         return this.comuni;
@@ -41,6 +44,35 @@ class PrivateService {
 
     getLingue() {
         return this.lingue;
+    }
+
+    // ### GET BY SEARCHING ###
+    
+    getComuniBySiglaProvincia(sigla) {
+        let result = [];
+        this.comuni.forEach( function(comune) {
+            if ( comune.sigla == sigla) 
+                result.push(comune);  
+        });
+        return result;
+    }
+
+    getComuniByProvincia(provincia) {
+        let result = [];
+        this.comuni.forEach( function(comune) {
+            if ( comune.provincia.nome == provincia) 
+                result.push(comune);  
+        });
+        return result;
+    }
+
+    getProvinceByRegione(regione) {
+        let result = [];
+        this.province.forEach( function(provincia) {
+            if ( provincia.regione == regione) 
+                result.push(provincia);  
+        });
+        return result;
     }
 }
 
