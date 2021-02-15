@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/GiamBoscaro/comuni-province-regioni-italia/issues"
   },
-  "description": "Piccolo server in Node.JS che esponde API da cui ricavare i comuni, province, regioni italiane. Inoltre è possibile avere anche gli nazioni, continenti e lingue del mondo. Utile per popolare elenchi e liste drop-down",
+  "description": "Piccolo server in Node.JS che espone API da cui ricavare i comuni, province, regioni italiane. Inoltre è possibile avere anche gli nazioni, continenti e lingue del mondo. Utile per popolare elenchi e liste drop-down",
   "homepage": "https://github.com/GiamBoscaro/comuni-province-regioni-italia",
   "keywords": ["api", "italia", "comuni", "province", "regioni", "stati", "continenti", "nazioni", "lingue", "node", "server"],
   "scripts": {
